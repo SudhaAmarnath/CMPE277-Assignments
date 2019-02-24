@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="225dp"
+    android:layout_height="120dp"
+    android:background="@android:color/holo_orange_dark"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dip"
+        android:text="Dialog Text"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/fab_margin" />
+
+    <Button
+        android:id="@+id/btn_finish_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="finishDialog"
+        android:text="Close" />
+</LinearLayout>
+

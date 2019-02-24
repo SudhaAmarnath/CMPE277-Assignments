@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B6481"
+    android:orientation="vertical"
+    android:padding="8dip">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="116dp"
+        android:layout_height="82dp"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-19dp"
+        android:layout_marginBottom="-4dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="62dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dip"
+        android:text="@string/activity_a"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/btn_start_dialog"
+        android:layout_width="136dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="202dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="231dp"
+        android:layout_marginBottom="56dp"
+        android:background="#F5F8F11E"
+        android:onClick="startDialog"
+        android:text="Dialog" />
+
+    <Button
+        android:id="@+id/btn_start_b"
+        android:layout_width="136dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@+id/btn_start_dialog"
+        android:layout_alignBottom="@+id/btn_start_dialog"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#F5F8F11E"
+        android:onClick="startActivityB"
+        android:text="Activity B" />
+
+
+    <TextView
+        android:id="@+id/threadCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginBottom="60dp"
+        android:text="Thread Counter: 0000"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_finish_b"
+        android:layout_width="141dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="128dp"
+        android:background="@android:color/background_dark"
+        android:onClick="finishActivityA"
+        android:text="Close App"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
+
