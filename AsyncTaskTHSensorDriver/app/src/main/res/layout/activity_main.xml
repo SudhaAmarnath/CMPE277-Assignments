@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sensorsText"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="164dp"
+        android:text="Number Of Sensor Readings:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/temperatureText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterSensors"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:background="@android:color/white"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sensorsText"
+        app:layout_constraintEnd_toEndOf="@+id/enterTemperature"
+        app:layout_constraintTop_toTopOf="@+id/sensorsText" />
+
+    <TextView
+        android:id="@+id/activityText"
+        android:layout_width="152dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="128dp"
+        android:text="Activity :"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/temperatureText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enterActivity"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:background="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/activityText"
+        app:layout_constraintEnd_toEndOf="@+id/enterTemperature"
+        app:layout_constraintTop_toTopOf="@+id/activityText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/humidityText"
+        android:layout_width="152dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="92dp"
+        android:text="Humidity :"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/temperatureText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enterHumidity"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/humidityText"
+        app:layout_constraintEnd_toEndOf="@+id/enterTemperature"
+        app:layout_constraintTop_toTopOf="@+id/humidityText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textTHSensorDriver"
+        android:layout_width="228dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        android:text="TH SENSOR DRIVER"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="152dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:text="Temperature :"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enterTemperature"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/temperatureText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/temperatureText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonGenerate"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="224dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="GENERATE"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/temperatureText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="CANCEL"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGenerate"
+        app:layout_constraintEnd_toEndOf="@+id/enterTemperature"
+        app:layout_constraintTop_toTopOf="@+id/buttonGenerate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/outputField"
+        android:layout_width="126dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="316dp"
+        android:text="Output :"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/temperatureText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        android:background="@android:color/darker_gray"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/enterTemperature"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="@+id/temperatureText"
+        app:layout_constraintTop_toBottomOf="@+id/outputField"
+        app:layout_constraintVertical_bias="0.8">
+
+        <TextView
+            android:id="@+id/scrollViewOutput"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:padding="0dip"
+            android:textColor="@android:color/background_light" />
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
