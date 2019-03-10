@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
                     strEnterSensors = varEnterSensors.getText().toString();
                     System.out.println(strEnterSensors);
                     intEnterSensors = Integer.parseInt(strEnterSensors);
-                    if(strEnterSensors == null || (intEnterSensors < 1 || intEnterSensors >= 20)) {
+                    if(strEnterSensors == null || (intEnterSensors < 1 || intEnterSensors > 20)) {
                         Toast.makeText(MainActivity.this, "Enter number of Sensors 1-20", Toast.LENGTH_LONG).show();
                     } else {
                         generate();
