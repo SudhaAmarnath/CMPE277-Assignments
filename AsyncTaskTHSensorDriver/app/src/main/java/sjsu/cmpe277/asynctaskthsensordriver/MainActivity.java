@@ -90,8 +90,12 @@ public class MainActivity extends Activity {
     private class Generate_Random_TH_Sensor_Parameters extends AsyncTask<Integer, Void, Void> {
 
 
-        int tempMin = -100;
-        int tempMax = 150;
+        int tempMin = 25;
+        int tempMax = 100;
+        int humidMin = 40;
+        int humidMax = 100;
+        int activityMin = 1;
+        int activityMax = 500;
 
 
         @Override
@@ -108,8 +112,8 @@ public class MainActivity extends Activity {
 
 
                 intEnterTemperature = random.nextInt(tempMax + 1 - tempMin) + tempMin;
-                intEnterHumidity = random.nextInt(101);
-                intEnterActivity = random.nextInt(1001);
+                intEnterHumidity =  random.nextInt(humidMax + 1 - humidMin) + humidMin;
+                intEnterActivity = random.nextInt(activityMax + 1 - activityMin) + activityMin;
 
                 th.temp[i] = String.valueOf(intEnterTemperature) + "F";
                 th.humidity[i] = String.valueOf(intEnterHumidity) + "%";
