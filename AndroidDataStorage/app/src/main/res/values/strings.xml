@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AndroidDataStorage</string>
+    <string name="s1_activity_headline">Android Data Storage Sample</string>
+    <string name="s1_preference">Preference</string>
+    <string name="s1_sqlite">SQLite</string>
+    <string name="s1_close">Close</string>
+    <string name="s1_imagedesc">SJSU Image</string>
+    <string name="s2_activity_headline">Preference View</string>
+    <string name="s2_save">Save</string>
+    <string name="s2_cancel">Cancel</string>
+    <string name="s2_bookname">Android Book Name</string>
+    <string name="s2_enter_bookname">Max. 70 Characters</string>
+    <string name="s2_bookauthor">Android Book Author</string>
+    <string name="s2_enter_bookauthor">Max. 70 Characters</string>
+    <string name="s2_description">Description</string>
+    <string name="s2_enter_description">Max. 255 characters only</string>
+    <string name="s3_activity_headline">SQLite View</string>
+    <string name="s3_save">Save</string>
+    <string name="s3_cancel">Cancel</string>
+    <string name="s3_blogmessage">Blog Message</string>
+    <string name="s3_enter_blogmessage">Max. 255 characters only</string>
+
+
+</resources>

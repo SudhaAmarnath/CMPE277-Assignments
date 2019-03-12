@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sjsu"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headlineText"
+        android:layout_width="246dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/s1_activity_headline"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="76dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/s1_imagedesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/PreferenceButton"
+        android:onClick="PreferenceButton"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="140dp"
+        android:background="#FBFB93"
+        android:text="@string/s1_preference"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/MainActivityClose"
+        android:onClick="MainActivityClose"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FBFB93"
+        android:text="@string/s1_close"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SqliteButton"
+        android:onClick="SqliteButton"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FBFB93"
+        android:text="@string/s1_sqlite"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PreferenceButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/PreferenceButton" />
+
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/scrollTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:typeface="monospace" />
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
