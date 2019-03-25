@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Services App</string>
+    <string name="file1">https://www.cisco.com/c/dam/en_us/about/annual-report/2018-annual-report-full.pdf</string>
+    <string name="file2">https://www.cisco.com/c/dam/en_us/about/annual-report/2018-annual-report-summary.pdf</string>
+    <string name="file3">https://www.cisco.com/c/dam/en_us/about/doing_business/trust-center/docs/dpbs-2019.pdf</string>
+    <string name="file4">https://www.cisco.com/c/dam/m/hu_hu/campaigns/security-hub/pdf/acr-2018.pdf</string>
+    <string name="file5">https://www.cisco.com/c/dam/en/us/td/docs/security/wsa/Advanced_Reporting/WSA_Advanced_Reporting_6/Advanced_Web_Security_Reporting_6_6.pdf</string>
+</resources>
