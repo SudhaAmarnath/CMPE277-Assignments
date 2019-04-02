@@ -1,7 +1,7 @@
 # Torch Application
 
-The camera flash light turns ON when the lumen reading is < 200 
-The camera flash light turns OFF when the lumen reading is >= 200 
+### The camera flash light turns ON when the lumen reading is < 200 
+### The camera flash light turns OFF when the lumen reading is >= 200 
 
 
 ![1](https://user-images.githubusercontent.com/42689991/55370601-d9b46900-54af-11e9-8b5e-1dfa89d5f85e.PNG)
