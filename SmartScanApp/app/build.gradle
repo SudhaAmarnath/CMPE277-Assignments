@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "sjsu.cmpe277.sudha.smartscan"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName '1.25'
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        dataBinding {
+            enabled true
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    implementation 'com.google.android.gms:play-services-vision:15.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:1.12.0'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    implementation 'com.itextpdf:itextpdf:5.5.6'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+}
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
