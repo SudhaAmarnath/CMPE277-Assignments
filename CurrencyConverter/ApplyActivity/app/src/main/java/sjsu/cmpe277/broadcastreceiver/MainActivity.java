@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         Double usdExchangeRate = 0.0;
 
         try{
-            String urlString = "https://ratesapi.io/api/latest?base=USD";
+            String urlString = "https://api.ratesapi.io/api/latest?base=USD";
             URL url = new URL(urlString);
             HttpsURLConnection urlConnection =(HttpsURLConnection)url.openConnection();
             if(urlConnection.getResponseCode() == 200)
@@ -143,6 +143,22 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
             usdExchangeRate = getCurrentUSDExchangeRate(currency);
+            if (usdExchangeRate == 0.0) {
+                switch (convertTo) {
+                    case "Euro":
+                        usdExchangeRate = 0.89;
+                        break;
+                    case "Indian Rupee":
+                        usdExchangeRate = 69.31;
+                        break;
+                    case "British Pound":
+                        usdExchangeRate = 0.77;
+                        break;
+                    default:
+                        break;
+                }
+                System.out.println("HTTP response from live exchange is not available at this time. USD rate used" + " = " + usdExchangeRate + " " + currency);
+            }
             convertedAmount = amountToConvert * usdExchangeRate;
             convertedValue = String.format( "%.2f", convertedAmount );
             receiverToSenderAmount = amountStr;
