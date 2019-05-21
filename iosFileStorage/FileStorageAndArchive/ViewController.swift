@@ -3,24 +3,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var bookName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.view.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
     }
-    @IBOutlet weak var AuthorName: UITextField!
+
+    @IBOutlet weak var bookName: UITextField!
+
+    @IBOutlet weak var authorName: UITextField!
 
     @IBOutlet weak var desc: UITextView!
-    func generateString() -> String {
-        let str = bookName.text! + ", " + AuthorName.text! + ", " + desc.text!
-        return str
-    }
     
-    func getDocDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentsDir = paths[0]
-        return documentsDir
-    }
     @IBAction func file(_ sender: Any) {
         let documentDirURL = getDocDirectory()
         let fileDestUrl = documentDirURL.appendingPathComponent("FileStorageAndArchive.txt")
@@ -60,6 +52,19 @@ class ViewController: UIViewController {
             print("read back failed");
         }
     }
+    
+    
+    func generateString() -> String {
+        let str = bookName.text! + ", " + authorName.text! + ", " + desc.text!
+        return str
+    }
+    
+    func getDocDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDir = paths[0]
+        return documentsDir
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
